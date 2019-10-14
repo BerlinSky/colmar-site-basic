@@ -1,5 +1,5 @@
 .footer-wraper {
-  @apply flex-auto w-full flex flex-col justify-between items-center overflow-hidden;
+  @apply flex-initial w-full flex flex-col justify-between items-center overflow-hidden;
 }
 
 .footer-section {

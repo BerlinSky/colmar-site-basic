@@ -148,7 +148,7 @@ module.exports = {
       template: './app/index.html',
       filename: 'index.html',
     }),
-
+    
     new HtmlWebPackPlugin({
       favicon: 'app/favicon.png',
       template: './app/html/layout.html',
