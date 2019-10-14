@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {     
+  "scripts": {
     "start": "webpack-dev-server --mode development --progress",
     "dev": "webpack --mode development",
     "dev:watch": "webpack --mode development --watch",
     "build": "webpack --mode production"
-  },                         
-  "author": "",             
+  },
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.2.2",
@@ -33,10 +33,13 @@
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "0.5.0",
     "node-sass": "4.11.0",
+    "postcss-import": "^12.0.1",
     "postcss-loader": "3.0.0",
+    "postcss-nested": "^4.1.2",
     "ramda": "^0.26.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
+    "tailwindcss": "^1.1.2",
     "webpack": "4.28.1",
     "webpack-cli": "3.2.1",
     "webpack-dev-server": "^3.1.14",
