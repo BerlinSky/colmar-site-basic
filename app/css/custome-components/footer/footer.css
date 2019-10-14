@@ -1,0 +1,7 @@
+.footer-wraper {
+  @apply flex-auto w-full flex flex-col justify-between items-center overflow-hidden;
+}
+
+.footer-section {
+  @apply flex-auto w-full flex flex-col justify-between items-center;
+}
