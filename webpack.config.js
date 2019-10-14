@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 // const nodeExternals = require('webpack-node-externals');
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -151,9 +151,14 @@ module.exports = {
 
     new HtmlWebPackPlugin({
       favicon: 'app/favicon.png',
-      // hash: true,
       template: './app/html/layout.html',
       filename: 'layout.html',
+    }),
+
+    new HtmlWebPackPlugin({
+      favicon: 'app/favicon.png',
+      template: './app/html/footer.html',
+      filename: 'footer.html',
     }),
 
     new WebpackMd5Hash()

@@ -9,20 +9,21 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-  <title>UI Basic | Layout</title>
+  <title>UI Basic | Footer</title>
 </head>
 
 <body>
   <div class="site-wraper outline-none">
     <section class="site-layout flex-auto w-full">
-      <header class="bg-gray-500 text-center">
+      <header class="flex-1 bg-gray-500 text-center">
         <div>Header Section</div>
       </header>
-      <main class="text-center">
+      <main class="flex-1 text-center">
         <div>Site Content</div>
       </main>
-      <footer class="bg-gray-500 text-center">
-        <div>Footer Section</div>
+      <footer class="flex-auto w-full bg-black text-center flex flex-col justify-end items-center p-4 overflow-hidden">
+        <div class="flex-auto w-full border-b-2">Section One</div>
+        <div class="flex-auto w-full">Section Two</div>
       </footer>
     </section>
   </div>
