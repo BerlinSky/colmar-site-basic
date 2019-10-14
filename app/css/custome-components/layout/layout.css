@@ -1,3 +1,7 @@
 .site-wraper {
-  @apply flex flex-col justify-between items-center min-h-screen outline-none;
+  @apply flex flex-col justify-between items-center min-h-screen;
+}
+
+.site-layout {
+  @apply flex flex-col justify-between items-stretch;
 }
