@@ -1,20 +1,7 @@
-.siteWrapper {              
-  @include flex-column-space-between();      
-  min-height: 100vh;            
-}                       
-  
-.siteLayout {                     
-  flex: 1 1 auto;               
-  width: 100%;               
-                            
-  @include flex-column-space-between();      
-  align-items: stretch;     
-} 
-  
-main.siteMain {                        
-  flex: 1 1 auto;        
-  width: 100%;           
-                         
-  @include flex-column-space-between();      
-  align-items: stretch;  
-} 
+main.siteMain {
+  flex: 1 1 auto;
+  width: 100%;
+
+  @include flex-column-space-between();
+  align-items: stretch;
+}
