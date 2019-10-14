@@ -5,3 +5,21 @@
 .footer-section {
   @apply flex-auto w-full flex flex-col justify-between items-center;
 }
+
+@screen md {
+  .footer-section {
+    @apply flex-row;
+    @apply items-stretch;
+  }
+}
+
+.footer-subsection {
+  @apply flex-auto;
+  @apply w-full;
+}
+
+@screen md {
+  .footer-subsection {
+    @apply w-auto;
+  }
+}
