@@ -148,11 +148,17 @@ module.exports = {
       template: './app/index.html',
       filename: 'index.html',
     }),
-    
+
     new HtmlWebPackPlugin({
       favicon: 'app/favicon.png',
       template: './app/html/layout.html',
       filename: 'layout.html',
+    }),
+
+    new HtmlWebPackPlugin({
+      favicon: 'app/favicon.png',
+      template: './app/html/header.html',
+      filename: 'header.html',
     }),
 
     new HtmlWebPackPlugin({
