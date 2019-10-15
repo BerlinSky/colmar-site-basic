@@ -1,0 +1,9 @@
+.header-wrapper {
+  @apply flex flex-wrap mb-4;
+}
+
+@screen md {
+  .header-wrapper {
+    @apply flex-no-wrap;
+  }
+}
