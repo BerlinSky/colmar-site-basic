@@ -167,6 +167,12 @@ module.exports = {
       filename: 'footer.html',
     }),
 
+    new HtmlWebPackPlugin({
+      favicon: 'app/favicon.png',
+      template: './app/html/social-links.html',
+      filename: 'social-links.html',
+    }),
+
     new WebpackMd5Hash()
   ],
 
