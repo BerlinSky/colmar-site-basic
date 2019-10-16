@@ -1,78 +1,78 @@
-.socialModule {                   
-  padding: 1.5rem 3.0rem;         
-                                  
-  ul.socialModule__list {                    
-    display: flex;                
-    justify-content: center;          
-    margin: 0px 0.725rem;                        
-    list-style: none;                 
-                                  
-    li {                 
-      margin: 0.8rem;    
-                         
-      a {                
+.socialModule {
+  padding: 1.5rem 3.0rem;
+
+  ul.socialModule__list {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0.725rem;
+    list-style: none;
+
+    li {
+      margin: 0.8rem;
+
+      a {
         text-decoration: none;
         background-color: transparent;
-                         
-        i {              
+
+        i {
           color: $color-secondary-light;
           font-size: 2.0rem;
-        }                
-      }            
-    } 
-    
-    .facebook {                           
-      @extend %fa-icon;                  
-      @extend .fab;                     
-                                       
-      &:before {                      
-        content: fa-content($fa-var-facebook);
-      }                              
-    }                           
-                                
-    .twitter {    
-      @extend %fa-icon;
-      @extend .fab;
-                   
-      &:before {                             
-        content: fa-content($fa-var-twitter);
-      }            
-    }          
-               
-    .instagram {       
-      @extend %fa-icon;
-      @extend .fab;
-                
-      &:before {                             
-        content: fa-content($fa-var-instagram);
-      }                                     
-    }           
-                 
-    .github {  
-      @extend %fa-icon;
-      @extend .fab;
-                   
-      &:before {
-        content: fa-content($fa-var-github);
-      }         
-    }           
-                
-    .linkedin {        
-      @extend %fa-icon;
-      @extend .fab;
-                
-      &:before {                             
-        content: fa-content($fa-var-linkedin);
-      }         
-    }           
-               
-    .youtube {  
-      @extend %fa-icon;
-      @extend .fab;
-                
-      &:before {
-        content: fa-content($fa-var-youtube);
-      }        
-    }   
-  }                 
-}        
+        }
+      }
+    }
+  }
+}
+
+.facebook {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-facebook);
+  }
+}
+ 
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+.instagram {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-instagram);
+  }
+}
+
+.github {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-github);
+  }
+}
+
+.linkedin {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-linkedin);
+  }
+}
+
+.youtube {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-youtube);
+  }
+}
