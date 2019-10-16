@@ -7,3 +7,65 @@
     @apply flex-no-wrap;
   }
 }
+
+.header-menu-box {
+  @apply w-1/5;
+}
+
+@screen sm {
+  .header-menu-box {
+    @apply hidden;
+  }
+}
+
+.header-logo-box {
+  @apply w-3/5;
+}
+
+@screen sm {
+  .header-logo-box {
+    @apply w-1/5;
+  }
+}
+
+.header-nav-box {
+  @apply hidden w-4/5;
+}
+
+@screen sm {
+  .header-nav-box {
+    @apply block;
+  }
+}
+
+@screen md {
+  .header-nav-box {
+    @apply w-3/5;
+  }
+}
+
+.header-sign-box {
+  @apply w-1/5;
+}
+
+@screen sm {
+  .header-sign-box {
+    @apply w-1/5 order-5;
+  }
+}
+
+.header-social-box {
+  @apply w-full;
+}
+
+@screen sm {
+  .header-social-box {
+    @apply w-4/5;
+  }
+}
+
+@screen md {
+  .header-social-box {
+    @apply hidden;
+  }
+}
