@@ -8,10 +8,13 @@ import {
   faEnvelope,
   faPhone,
   faCheck,
-  faCircle,
+  // faCircle,
   faLongArrowAltDown,
   faLongArrowAltUp,
+  // faCircleNotch,
 } from '@fortawesome/free-solid-svg-icons'
+
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
   faKey,
