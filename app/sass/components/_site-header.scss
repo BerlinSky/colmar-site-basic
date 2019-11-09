@@ -6,6 +6,21 @@ header.siteHeader {
   min-height: 75px;
 }
 
+img.siteLogo {
+  height: 3rem;
+}
+
+.mobileMenu {
+  display: block;
+
+  color: darkgray;
+
+  &__image {
+    height: 3rem;
+    width: 3rem;
+
+  }
+}
 // header.siteHeader nav {
 //   @include flex-row-wrap-space-between();
 // }
