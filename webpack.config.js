@@ -146,6 +146,13 @@ module.exports = {
       favicon: 'app/favicon.png',
       // hash: true,
       template: './app/html/layout.html',
+      filename: 'layout.html',
+    }),
+
+    new HtmlWebPackPlugin({
+      favicon: 'app/favicon.png',
+      // hash: true,
+      template: './app/html/header.html',
       filename: 'index.html',
     }),
 
