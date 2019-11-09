@@ -1,28 +1,28 @@
 const path = require('path');
 const webpack = require('webpack');
 // const nodeExternals = require('webpack-node-externals');
-                     
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-                    
+
 const cleanWebPackPlugin = new CleanWebpackPlugin([path.resolve(__dirname, 'dist')])
-                  
+
 const entryConfig = {
   vendor: ['ramda'],
-  main: [        
+  main: [
     path.resolve(__dirname, 'app/js/main.js'),
     path.resolve(__dirname, 'app/sass/main.scss')
-  ]             
-}              
-              
+  ]
+}
+
 const outputConfig = {
   path: path.resolve(__dirname, 'dist'),
   filename: '[name].js'
   // filename: 'bundle.[name].[chunkhash].js'
   // filename: '[name].[chunkhash].js'
-}           
+}
 
 const jsRules = {
   test: /\.js$/,
@@ -117,7 +117,7 @@ module.exports = {
   optimization: optimization,
 
   target: "web",
-                
+
   devtool: "source-map",
 
   module: {
@@ -125,7 +125,7 @@ module.exports = {
       jsRules,
       sassRules,
       htmlRules,
-      fontRules,   
+      fontRules,
       imageRules
     ]
   },
@@ -147,6 +147,13 @@ module.exports = {
       // hash: true,
       template: './app/index.html',
       filename: 'index.html',
+    }),
+
+    new HtmlWebPackPlugin({
+      favicon: 'app/favicon.png',
+      // hash: true,
+      template: './app/html/layout.html',
+      filename: 'layout.html',
     }),
 
     new WebpackMd5Hash()
