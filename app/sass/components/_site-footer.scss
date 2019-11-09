@@ -1,6 +1,8 @@
-footer.siteFooter {              
+footer.siteFooter {
   background-color: $color-primary-dark;
-  color: $color-secondary;                         
-  line-height: 1.5;       
-  flex: 0 0;              
-}  
+  color: $color-secondary;
+  padding: 5.0rem;
+  width: 100%;
+  min-height: 95px;
+  text-align: center;
+}

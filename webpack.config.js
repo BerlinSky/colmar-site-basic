@@ -145,15 +145,8 @@ module.exports = {
     new HtmlWebPackPlugin({
       favicon: 'app/favicon.png',
       // hash: true,
-      template: './app/index.html',
-      filename: 'index.html',
-    }),
-
-    new HtmlWebPackPlugin({
-      favicon: 'app/favicon.png',
-      // hash: true,
       template: './app/html/layout.html',
-      filename: 'layout.html',
+      filename: 'index.html',
     }),
 
     new WebpackMd5Hash()
