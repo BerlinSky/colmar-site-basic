@@ -20,6 +20,14 @@ img.siteLogo {
     height: 3rem;
     width: 3rem;
     fill: currentColor;
+
+    &--item {
+      display: none;
+    }
+
+    &--item.show {
+      display: block;
+    }
   }
 
   &:hover  {
