@@ -30,8 +30,26 @@ img.siteLogo {
     color: white;
     outline: 0;;
   }
-
 }
+
+.menuLinkPanel {
+  padding: .5rem .5rem 1rem .5rem;
+
+  a.menuLink {
+    display: block;
+    color: white;
+    font-weight: 600;
+    border-radius: .25rem;
+
+    &:hover {
+      background-color: #2d3748;
+      color: #596dcf;
+      outline: 0;
+      box-shadow: 0 1px 0 0 currentColor;
+    }
+  }
+}
+
 // header.siteHeader nav {
 //   @include flex-row-wrap-space-between();
 // }
