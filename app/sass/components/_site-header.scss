@@ -1,9 +1,10 @@
 header.siteHeader {
-  background-color: $color-primary-light;
-  padding: 2.0rem;
+  // background-color: $color-primary-light;
+  background-color: #1a202c;
+  padding: .75rem 1rem;
   width: 100%;
   text-align: center;
-  min-height: 75px;
+  // min-height: 75px;
 }
 
 img.siteLogo {
@@ -13,13 +14,23 @@ img.siteLogo {
 .mobileMenu {
   display: block;
 
-  color: darkgray;
+  color: #a0aec0;
 
   &__image {
     height: 3rem;
     width: 3rem;
-
+    fill: currentColor;
   }
+
+  &:hover  {
+    color: white;
+  }
+
+  &:focus {
+    color: white;
+    outline: 0;;
+  }
+
 }
 // header.siteHeader nav {
 //   @include flex-row-wrap-space-between();
