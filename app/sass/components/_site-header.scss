@@ -34,6 +34,7 @@ img.siteLogo {
 
 .menuLinkPanel {
   padding: 1rem .5rem 1rem .5rem;
+  display: none;
 
   a.menuLink {
     display: block;
@@ -47,6 +48,10 @@ img.siteLogo {
       outline: 0;
       box-shadow: 0 1px 0 0 currentColor;
     }
+  }
+
+  &.show {
+    display: block;
   }
 }
 
