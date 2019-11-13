@@ -1,6 +1,7 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 // const nodeExternals = require('webpack-node-externals');
+const fs = require('fs');
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -109,6 +110,22 @@ const optimization = {
   }
 }
 
+const createHtmlPluginList = (templateDir) => {
+  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir))
+  return templateFiles.map(item => {
+    const parts = item.split('.')
+    const name = parts[0]
+    const extension = parts[1]
+
+    return new HtmlWebPackPlugin({
+      filename: `${name}.html`,
+      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`)
+    })
+  })
+}
+
+const htmlPlugins = createHtmlPluginList('./app/html/')
+
 module.exports = {
   entry: entryConfig,
 
@@ -142,22 +159,23 @@ module.exports = {
       // filename: "main.[contenthash].css"
     }),
 
-    new HtmlWebPackPlugin({
-      favicon: 'app/favicon.png',
-      // hash: true,
-      template: './app/html/layout.html',
-      filename: 'layout.html',
-    }),
+    // new HtmlWebPackPlugin({
+    //   favicon: 'app/favicon.png',
+    //   // hash: true,
+    //   template: './app/html/layout.html',
+    //   filename: 'layout.html',
+    // }),
 
-    new HtmlWebPackPlugin({
-      favicon: 'app/favicon.png',
-      // hash: true,
-      template: './app/html/header.html',
-      filename: 'index.html',
-    }),
+    // new HtmlWebPackPlugin({
+    //   favicon: 'app/favicon.png',
+    //   // hash: true,
+    //   template: './app/html/header.html',
+    //   filename: 'index.html',
+    // }),
 
     new WebpackMd5Hash()
-  ],
+
+  ].concat(htmlPlugins),
 
   watch: true,
 
