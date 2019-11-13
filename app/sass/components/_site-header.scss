@@ -1,14 +1,27 @@
 header.siteHeader {
   // background-color: $color-primary-light;
   background-color: #1a202c;
-  padding: .75rem 1rem;
+  padding: .75rem 1rem .75rem 1rem;
   width: 100%;
   text-align: center;
-  // min-height: 75px;
+
+  @include break(sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 img.siteLogo {
   height: 3rem;
+}
+
+.mobileMenuBox {
+  display: block;
+
+  @include break(sm) {
+    display: none;
+  }
 }
 
 .mobileMenu {
@@ -44,11 +57,19 @@ img.siteLogo {
   padding: 1rem .5rem 1rem .5rem;
   display: none;
 
+  @include break(sm) {
+    display: flex;
+  }
+
   a.menuLink {
     display: block;
     color: white;
     font-weight: 600;
     border-radius: .25rem;
+
+    @include break(sm) {
+      margin-left: 1rem;
+    }
 
     &:hover {
       background-color: #2d3748;
@@ -62,25 +83,3 @@ img.siteLogo {
     display: block;
   }
 }
-
-// header.siteHeader nav {
-//   @include flex-row-wrap-space-between();
-// }
-
-// .siteHeader nav ul {
-//   font-size: 2.75rem;
-//   display: flex;
-//   order: 1;
-//   margin: 15px 0px 0px 0px;
-//   list-style: none;
-// }
-
-// .siteHeader nav ul li:not(:last-child) {
-//   padding-right: 15px;
-// }
-
-// .siteHeader nav ul li a {
-//   text-decoration: none;
-//   color: inherit;
-//   background-color: transparent;
-// }
