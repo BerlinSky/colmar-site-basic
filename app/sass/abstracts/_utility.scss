@@ -1,16 +1,20 @@
 // Utility
-.centerText {         
-  text-align: center; 
-}                    
-                      
+@function rem-calc($px){
+  @return $px/10+rem;
+}
+
+.centerText {
+  text-align: center;
+}
+
 .marginBottom--small {
   margin-bottom: 1.25rem;
-}                     
-                      
+}
+
 .marginBottom--medium {
   margin-bottom: 4rem;
-}                     
-                                   
-.marginBottom--large {             
+}
+
+.marginBottom--large {
   margin-bottom: 8rem;
-} 
+}

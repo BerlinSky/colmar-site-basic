@@ -1,46 +1,66 @@
-*, 
-*::after,                          
-*::before {                                                
-    margin: 0;                                            
-    padding: 0;                                           
-    box-sizing: inherit;                          
-}                                           
-                                        
-html {                             
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-width: 0;
+    border-style: solid;
+}
+
+html {
   //Definition: 1 rem = 10px => 10px/16px = 62.5%
-  font-size: 62.5%;            
-}                                                           
-     
-img {                        
-  max-width: 100%;           
-  padding-bottom: 0;         
-  padding-left: 0;       
-  padding-right: 0;     
-  padding-top: 0;     
-}                    
-                     
-ul li {           
-  padding-left: 0;   
-}                  
-                  
-li {          
+  font-size: 62.5%;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+ul li {
+  padding-left: 0;
+}
+
+li {
   margin-bottom: calc(1.45rem / 2);
-} 
-  
-button, select {                                      
-  text-transform: none;               
-} 
-  
-button, input {                                                             
-  overflow: visible;                                                        
-}  
-                                                            
-button, input, optgroup, select, textarea {              
-  font: inherit;                                         
-  margin: 0;                                             
-} 
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+}
 
 [type=reset], [type=submit], button, html [type=button] {
   -webkit-appearance: button;
-}            
-   
+}
+
+button, input, optgroup, select, textarea {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+}
+
+a {
+  text-decoration: inherit;
+  background-color: transparent;
+}

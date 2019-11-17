@@ -17,5 +17,6 @@ const toggleMobileMenuElements = () => {
 
 (function() {
   const mobileMenu = document.querySelector('.js-mobileMenu');
-  mobileMenu.addEventListener('click', toggleMobileMenuElements);
+
+  mobileMenu ?  mobileMenu.addEventListener('click', toggleMobileMenuElements): "";
 })()

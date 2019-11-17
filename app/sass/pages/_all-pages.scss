@@ -1,5 +1,24 @@
-main.siteMain {
-  padding: 5.0rem;
+.siteMain {
+  padding: 0;
   width: 100%;
   text-align: center;
+
+  @include break(sm) {
+    display: flex;
+  }
+}
+
+aside.sideBar {
+  background-color: yellow;
+  flex: 0 1 300px;
+}
+
+main.mainContent {
+  background-color: green;
+  flex: 1;
+}
+
+.contentWrapper {
+  margin: auto;
+  max-width: rem-calc(1280);
 }
