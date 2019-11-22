@@ -5,7 +5,7 @@ const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
 
 const middlewares = jsonServer.defaults({
-  static: "node_modules/jso-server/dis"
+  static: "node_modules/jso-server/dist"
 });
 
 // Set the middleware
@@ -21,7 +21,15 @@ server.use(function(req, res, next) {
 
 // Add createAt
 server.use((req, res, next) => {
+  if (req.method === "POST") {
+    req.body.createdAt = Date.now();
+  }
+  next();
+});
+   
+server.post("/books/", function(req, res, next) {
   const error = validateBook(req.body);
+
   if (error) {
     res.status(400).send(error);
   }
@@ -35,7 +43,7 @@ server.use(router);
 
 const port = 3001;
 server.listen(port, () => {
-  console.log(` JSON Sever is running on port $(port}` );
+  console.log(` JSON Sever is running on port ${port}` );
 });
 
 function createSlug(value) {
