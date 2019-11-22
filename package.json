@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --progress",
+  "scripts": { 
+    "start": "run-p start:dev start:api",
+    "start:dev": "webpack-dev-server --mode development --progress",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
     "dev": "webpack --mode development",
